@@ -2,7 +2,7 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8" name="viewpoint" content="width=device-width, innitial-scale=1">
+    <!--<meta charset="UTF-8" name="viewpoint" content="width=device-width, innitial-scale=1">
     <title>newsletter</title>
     <style>
     a {
@@ -17,6 +17,46 @@
         
         table {
             font-size: 125%;
+        }-->
+    <meta charset="UTF-8">
+    <title>Me-Talk</title>
+    <style>
+        header {
+            position: fixed;
+            top:0;
+            width: 100%;
+            padding: 10;
+            background-color: white
+        }
+        
+        
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        table {
+            font-size: 110%;
+        }
+        
+        @font-face {
+            font-family:"NanumSquareOTF_ac";
+            src:url("font/NanumSquareOTF-ac.otf") format("opentype");
+        }
+        
+        body {
+            font-family: NanumSquareOTF_ac;
+            font-size: 15px
         }
     </style>
 </head>
@@ -25,8 +65,8 @@
    <center>
     <table>
             <tr width="550">
-                <td width="350"><a href="index.html"><i>Me-Talk</i></a></td>
-                <td width="100"><a href="newsletter.html" style="color:green"><b>뉴스레터</b></a></td>
+                <td width="400"><a href="index.html"><i>Me-Talk</i></a></td>
+                <td width="100"><a href="newsletter.html" style="font-weight: 900">뉴스레터</a></td>
                 <td width="50"><a href="introduction.html">소개</a></td>
             </tr>
         </table>
@@ -37,8 +77,8 @@
         <br>
         <br>
         
-        <p><a href="volume0.html">0호</a></p>
-        <p><a href="#">1호</a></p>
+        <p><a href="volume0.html" style="color: coral">0호</a></p>
+        <p><a href="#" style="color: coral">1호</a></p>
 
 
 

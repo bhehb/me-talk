@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" name="viewpoint" content="width=device-width, innitial-scale=1">
-    <title>소개</title>
+    <meta charset="UTF-8">
+    <title>Me-Talk</title>
     <style>
-    a {
-    color: coral;
-    text-decoration: none;
-        }
-        div {
-            background-color: #F9ECD2;
-            width: 600px;
-            height:10%;
+        header {
+            position: fixed;
+            top:0;
+            width: 100%;
+            padding: 10;
+            background-color: white
         }
         
+        
+        .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%);
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
         table {
-            font-size: 125%;
+            font-size: 110%;
+        }
+        
+        @font-face {
+            font-family:"NanumSquareOTF_ac";
+            src:url("font/NanumSquareOTF-ac.otf") format("opentype");
+        }
+        
+        body {
+            font-family: NanumSquareOTF_ac;
+            font-size: 15px
         }
     </style>
 </head>
@@ -24,9 +48,9 @@
    <center>
     <table>
             <tr width="550">
-                <td width="350"><a href="index.html"><i>Me-Talk</i></a></td>
+                <td width="400"><a href="index.html"><i>Me-Talk</i></a></td>
                 <td width="100"><a href="newsletter.html">뉴스레터</a></td>
-                <td width="50"><a href="introduction.html" style="color:green"><b>소개</b></a></td>
+                <td width="50"><a href="introduction.html" style="font-weight: 900"><b>소개</b></a></td>
             </tr>
         </table>
 
@@ -46,6 +70,6 @@
         그날까지는 모든 것을 저희 둘만의 힘으로 만들어 보고자 합니다.</p>
         <p>가끔 둘러보시면서 조금씩 발전된 웹 페이지의 모습을 구경하는 재미가 있길 바랍니다.<span class=""></span></p>
         <br>
-        <h4>홍, 안나 드림</h4>
+        <p>홍, 안나 드림</p>
     </center>
 </body></html>

@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8" name="viewpoint" content="width=device-width, innitial-scale=1">
+    <meta charset="UTF-8">
     <title>Me-Talk</title>
     <style>
+        header {
+            position: fixed;
+            top:0;
+            width: 100%;
+            padding: 10;
+            background-color: white
+        }
+        
         .parent {
             position: relative;
         }
@@ -15,36 +23,43 @@
         }
 
         a {
-            color: coral;
+            color: black;
             text-decoration: none;
         }
 
-        div {
-            background-color: #F9ECD2;
-            width: 600px;
+        table {
+            font-size: 110%;
         }
         
-        table {
-            font-size: 125%;
+        @font-face {
+            font-family:"NanumSquareOTF_ac";
+            src:url("font/NanumSquareOTF-ac.otf") format("opentype");
         }
+        
+        body {
+            font-family: NanumSquareOTF_ac;
+            font-size: 15px
+        }
+        
     </style>
 </head>
 
 <body>
     <center>
+       <header>
         <table>
             <tr width="550">
-                <td width="350"><a href="index.html"><i>Me-Talk</i></a></td>
-                <td width="100"><a href="newsletter.html" style="color:green"><b>뉴스레터</b></a></td>
+                <td width="400"><a href="index.html"><i>Me-Talk</i></a></td>
+                <td width="100"><a href="newsletter.html" style="font-weight: 900">뉴스레터</a></td>
                 <td width="50"><a href="introduction.html">소개</a></td>
             </tr>
         </table>
         <hr>
+        </header>
         <br><br>
 
 
-
-        <img src="metalk.png" alt="metalk" width="570">
+        <img src="metalk.png" alt="metalk" width="600">
         <hr width="600">
         <br>
         <p>안녕하세요. anna입니다. <br>
@@ -53,16 +68,20 @@
             의견이나 쓴소리도 마구마구 해주시면 열심히 듣고, 실행할게요.😉
         </p>
         <br>
-        <div style="padding: 15px">💌뉴스레터는 둘째, 넷째 수요일 오전 9시에 보내드릴게요💌</div>
+        <img src="letter.png" alt="letter" width="600">
 
-        <br><br><br>
+        <br><br><br><br><hr width="600"><br>
+        
         <h3>💬이런 이야기를 담을 거예요.</h3>
         <img src="interview.png" alt="interview" width="600">
         <br>
+        <p>여러분들은 본인이 누군지 잘 아신다고 생각하시나요?<br>
+        의외로 좋아하는 음악 취향과 같은 가벼운 질문에 쉽사리 답변할 수 없는 사람들이 많더라고요. <br>
+        내 취향, 내 생각과 가치관을 지키고 살아가는 사람들은 어떻게 일을 하고 어떤 마음가짐으로 <br>살아가고 있을까요?</p>
         <p>'진짜 나'를 찾아가는 사람들, '좋아하는 일'을 하는 사람들의 이야기를 <br>
         담을 예정이에요. <b><u>밴드를 취미로 하는 뮤지션, 노래하는 사회자 등</u></b> <br>
         재미있는 인터뷰를 담아올게요. :)</p>
-        <br><br><br>
+        <br><br><br><br>
         
         <h3>💭이런 이야기도 담을 거예요.</h3>
         <img src="diary.png" alt="diary" width="600">
@@ -73,25 +92,26 @@
         <br>
         <br>
         <br>
+        <br>
+        <hr width="600">
+        <br>
 
-        <p>그리고 우리 <b>소통</b>해요! 매 호마다 주제와 관련된 질문을 드릴게요. <br>
-        편하게 답변해 주세요. <b>여러분들의 이야기도 소개할래요😊 함께 <br>
-        아기자기한 공간을 가꿔나가요.</b></p>
-
-        <img src="bananastrawberry.png" alt="banana_strawberry" width="570">
+        <p>그리고 우리 소통해요! 매 호마다 주제와 관련된 질문을 드릴게요. <br>
+        편하게 답변해 주세요. 여러분들의 이야기도 소개할래요😊 함께 <br>
+        아기자기한 공간을 가꿔나가요.</p>
         <br><br>
-        <div style="padding: 25px"><b>미톸레터 소개는 여기까지</b><br><br>
-            우리 2주 뒤에 건강하게 만나요!</div>
+
+        <img src="bananastrawberry.png" alt="banana_strawberry" width="600">
+        <br><br>
+        <img src="closing.png" alt="closing" width="600">
         <br>
         <br>
         <br>
-        
-        <table border="0" width="200" style="background-color: #ffc74b;" cellpadding="8">
+        <table border="1" width="200" style="background-color: #ffc74b;" cellpadding="8">
             <tr>
             <th><a href="https://docs.google.com/forms/d/e/1FAIpQLSf20TMi0ZTob5mbMGy9zztUIAEjL5GOUtRJhELhYIQRjl-8tw/viewform">구독하러 가기</a></th>
             </tr>
         </table>
-
 
     </center>
 
