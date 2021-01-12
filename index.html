@@ -4,13 +4,13 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Me-Talk</title>
     <style>
-        header {
+        /*header {
             position: fixed;
             top:0;
             width: 100%;
             padding: 10;
             background-color: white
-        }
+        }*/
 
         a {
             color: black;
@@ -37,26 +37,75 @@
             }
         }
         
+        
+        /*새로만드는 상단에 같이 적용이 되어서 클래스명을 추가했어요~*/
+        div.box {
+            background-color: #F9ECD2;
+            width: 100%;
+        }
+        
+        /*상단 만들기1 - float 사용*/
+        /*전체 900px을 기준으로 로고와 메뉴를 4:6의 비율로 나눠서 메뉴가 최대한 가운데 오도록 구현 */
+        .top {
+            width: 100%;
+            margin: 0 auto;
+            height: 50px;
+            line-height: 30px;
+            background-color: none;
+        }
+        .top:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .top .logo {
+            width: 60%;
+            float: left;
+        }
+        ul {
+            width: 40%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            float: right;
+        }
+        ul li {
+            display: inline-block;
+            margin-right: 30px;
+        }
+        
     </style>
 </head>
 
 <body>
-       <header>
+      <!--상단 만들기-->
+<div class="top">
+    <div class="logo">
+        <a href="index.html">Me-Talk</a>
+    </div>
+
+    <ul class="menu">
+        <li><a href="newsletter.html">뉴스레터</a></li>
+        <!--<li><a href="youtalk.html">유토크</a></li>-->
+        <li><a href="introduction.html">소개</a></li>
+    </ul>
+</div>
+       <!--<header>
         <table>
-            <tr width=100%>
-                <td width=70%><a href="index.html" style="font-weight:900"><i>Me-Talk</i></a></td>
-                <td width=20%><a href="newsletter.html">뉴스레터</a></td>
-                <td width=10%><a href="introduction.html">소개</a></td>
+            <tr width="550">
+                <td width="400"><a href="index.html" style="font-weight:900"><i>Me-Talk</i></a></td>
+                <td width="100"><a href="newsletter.html">뉴스레터</a></td>
+                <td width="50"><a href="introduction.html">소개</a></td>
             </tr>
         </table>
-        <hr width=100%>
-        </header>
+        <hr>
+        </header>-->
         <br><br>
 
 
 
         <img src="metalk.png" alt="metalk" width=100%>
-        <hr width=100%>
+        <hr>
         <br>
         <p>안녕하세요. anna입니다. <br>
             Me-Talk 뉴스레터 0호로 처음 인사 드리네요.👋<br><br>
