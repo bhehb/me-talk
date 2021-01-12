@@ -1,130 +1,159 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>Me-Talk</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volume.0</title>
     <style>
-        header {
-            position: fixed;
-            top:0;
-            width: 100%;
-            padding: 10;
-            background-color: white
-        }
-        
-        .parent {
-            position: relative;
-        }
-
-        .child {
-            position: absolute;
-            top: 50%;
-            transform: translate(-50%);
-        }
-
         a {
             color: black;
             text-decoration: none;
         }
 
-        table {
-            font-size: 100%;
-        }
-        
         @font-face {
-            font-family:"NanumSquareOTF_ac";
-            src:url("font/NanumSquareOTF-ac.otf") format("opentype");
+            font-family: "NanumSquareOTF_ac";
+            src: url("font/NanumSquareOTF-ac.otf") format("opentype");
         }
-        
-        body {
-            font-family: NanumSquareOTF_ac;
+
+        .wrap {
+            font-family: "NanumSquareOTF_ac";
             font-size: 15px;
             line-height: 150%;
+            width: 100%;
+            margin: 0 auto;
         }
-        
-        
+
+        .inner {
+            width: 90%;
+            margin: 0 5%;
+        }
+
+        @media screen and (min-width: 700px) {
+            .inner {
+                width: 700px;
+                margin: 0 auto;
+            }
+        }
+
+
+        /*상단 만들기2 - position 사용*/
+        .top {
+            width: 100%;
+            margin: 0 auto;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            top: 0px;
+            /*background-color: lightblue;*/
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            width: 25%;
+            /*background-color: yellow;*/
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 90%;
+            transform: translate(-60%);
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-right: 30px;
+        }
     </style>
 </head>
 
 <body>
-    <center>
-       <header>
-        <table>
-            <tr width="550">
-                <td width="400"><a href="index.html"><i>Me-Talk</i></a></td>
-                <td width="100"><a href="newsletter.html" style="font-weight: 900">뉴스레터</a></td>
-                <td width="50"><a href="introduction.html">소개</a></td>
-            </tr>
-        </table>
-        <hr>
-        </header>
-        <br><br>
+    <div class="wrap">
+        <div class="inner">
+
+            <header>
+                <div class="top">
+                    <div class="logo">
+                        <a href="index.html">Me-Talk</a>
+                    </div>
+
+                    <ul class="menu">
+                        <li><a href="newsletter.html" style="font-weight: 900">뉴스레터</a></li>
+                        <li><a href="introduction.html">소개</a></li>
+                    </ul>
+
+                </div>
+            </header>
+            <hr>
 
 
-        <img src="metalk.png" alt="metalk" width="600">
-        <hr width="600">
-        <br>
-        <p>안녕하세요. anna입니다. <br>
-            Me-Talk 뉴스레터 0호로 처음 인사 드리네요.👋<br><br>
-            뉴스레터를 통해 우리 같이 긍정적인 공간을 만들어 나갔으면 좋겠어요! <br>
-            의견이나 쓴소리도 마구마구 해주시면 열심히 듣고, 실행할게요.😉
-        </p>
-        <br>
-        <img src="letter.png" alt="letter" width="600">
+            <img src="metalk.png" alt="metalk" width=100%>
+            <hr>
+            <br>
+            <p>안녕하세요. anna입니다. <br>
+                Me-Talk 뉴스레터 0호로 처음 인사 드리네요.👋<br><br>
+                우선 구독 신청해주셔서 정말 감사드립니다🙏 <br>
+                뉴스레터를 통해 우리 같이 긍정적인 공간을 만들어 나갔으면 좋겠어요! 의견이나 쓴소리도 마구마구 해주시면 열심히 듣고, 실행할게요.😉
+            </p>
+            <br>
+            <img src="letter.png" alt="letter" width=100%>
 
-        <br><br><br><br><hr width="600"><br>
-        
-        <h3>💬이런 이야기를 담을 거예요.</h3>
-        <img src="interview.png" alt="interview" width="600">
-        <br>
-        <p>여러분들은 본인이 누군지 잘 아신다고 생각하시나요?<br>
-        의외로 좋아하는 음악 취향과 같은 가벼운 질문에 쉽사리 답변할 수 없는 <br>
-        사람들이 많더라고요. 내 취향, 내 생각과 가치관을 지키고 살아가는 사람들은<br>
-         어떻게 일을 하고 어떤 마음가짐으로 살아가고 있을까요?</p>
-        <p>'진짜 나'를 찾아가는 사람들, '좋아하는 일'을 하는 사람들의 이야기를 <br>
-        담을 예정이에요. <b><u>밴드를 취미로 하는 뮤지션, 노래하는 사회자 등</u></b> <br>
-        재미있는 인터뷰를 담아올게요. :)</p>
-        <br><br><br><br>
-        
-        <h3>💭이런 이야기도 담을 거예요.</h3>
-        <img src="diary.png" alt="diary" width="600">
-        <br>
-        <p>뉴스레터를 포함해 지금 운영하고 있는 유튜브 채널, 그리고 크라우드 <br>
-        펀딩까지 <b><u>도전하고 실패하는 짧은 경험담</u></b>을 그림일기로 기록하려 해요. <br>
-        스타트업을 준비하는 청년들의 성장스토리 함께 해요.</p>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr width="600">
-        <br>
+            <br><br><br>
+            <hr width=100%><br><br>
 
-        <p>그리고 우리 소통해요! 매 호마다 주제와 관련된 질문을 드릴게요. <br>
-        편하게 답변해 주세요. 여러분들의 이야기도 소개할래요😊 함께 <br>
-        아기자기한 공간을 가꿔나가요.</p>
-        <br><br>
+            <center>
+                <h3>💬이런 이야기를 담을 거예요.</h3>
+            </center>
+            <img src="interview.png" alt="interview" width=100%>
+            <br>
+            <p>여러분들은 본인이 누군지 잘 아신다고 생각하시나요?<br>
+                의외로 좋아하는 음악 취향과 같은 가벼운 질문에 쉽사리 답변할 수 없는 사람들이 많더라고요. 내 취향, 내 생각과 가치관을 지키고 살아가는 사람들은 어떻게 일을 하고 어떤 마음가짐으로 살아가고 있을까요?</p>
+            <p>'진짜 나'를 찾아가는 사람들, '좋아하는 일'을 하는 사람들의 이야기를 담을 예정이에요. <b><u>밴드를 취미로 하는 뮤지션, 노래하는 사회자 등</u></b> 재미있는 인터뷰를 담아올게요. :)</p>
+            <br><br><br><br>
 
-        <img src="bananastrawberry.png" alt="banana_strawberry" width="600">
-        <br><br>
-        <img src="closing.png" alt="closing" width="600">
-        <br>
-        <br>
-        <br>
-        <table border="1" width="200" style="background-color: #ffc74b;" cellpadding="8">
-            <tr>
-            <th><a href="https://docs.google.com/forms/d/e/1FAIpQLSf20TMi0ZTob5mbMGy9zztUIAEjL5GOUtRJhELhYIQRjl-8tw/viewform">구독하러 가기</a></th>
-            </tr>
-        </table>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        
+            <center>
+                <h3>💭이런 이야기도 담을 거예요.</h3>
+            </center>
+            <img src="diary.png" alt="diary" width=100%>
+            <br>
+            <p>뉴스레터를 포함해 지금 운영하고 있는 유튜브 채널, 그리고 크라우드 펀딩까지 <b><u>도전하고 실패하는 짧은 경험담</u></b>을 그림일기로 기록하려 해요. 스타트업을 준비하는 청년들의 성장스토리 함께 해요.</p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <hr width=100%>
+            <br>
 
-    </center>
+            <p>그리고 우리 소통해요! 매 호마다 주제와 관련된 질문을 드릴게요.
+                편하게 답변해 주세요. 여러분들의 이야기도 소개할래요😊 함께 아기자기한 공간을 가꿔나가요.</p>
+            <br><br>
 
-
+            <img src="bananastrawberry.png" alt="banana_strawberry" width=100%>
+            <br><br>
+            <img src="closing.png" alt="closing" width=100%>
+            <br>
+            <br>
+            <br>
+            <center>
+                <table border="1" width=120px style="background-color: #ffc74b;" cellpadding="8">
+                    <tr>
+                        <th><a href="https://docs.google.com/forms/d/e/1FAIpQLSf20TMi0ZTob5mbMGy9zztUIAEjL5GOUtRJhELhYIQRjl-8tw/viewform">구독하러 가기</a></th>
+                    </tr>
+                </table>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
 </body></html>
