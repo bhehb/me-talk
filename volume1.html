@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>volume.1</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        @font-face {
+            font-family: "NanumSquareOTF_ac";
+            src: url("font/NanumSquareOTF-ac.otf") format("opentype");
+        }
+
+        .wrap {
+            font-family: "NanumSquareOTF_ac";
+            font-size: 15px;
+            line-height: 150%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .inner {
+            width: 90%;
+            margin: 0 5%;
+        }
+
+        @media screen and (min-width: 750px) {
+            .inner {
+                width: 700px;
+                margin: 0 auto;
+            }
+        }
+
+
+        /*상단 만들기2 - position 사용*/
+        .top {
+            width: 100%;
+            margin: 0 auto;
+            height: 30px;
+            line-height: 30px;
+            position: relative;
+            top: 0px;
+            /*background-color: lightblue;*/
+        }
+
+        .logo {
+            margin-left: 30px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            width: 45%;
+            /*background-color: yellow;*/
+            text-align: center;
+            position: absolute;
+            top: 0;
+            left: 80%;
+            transform: translate(-60%);
+        }
+
+        .menu li {
+            display: inline-block;
+            margin-left: 15%;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        hr {
+            color: gray;
+            width: 100%;
+            margin: 5px auto;
+            border-style: dashed;
+        }
+        
+        h2 {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 900;
+        }
+        h3 {
+            text-align: center;
+            font-size: 15px;
+            color: dimgray;
+            font-weight: 800;
+        }
+        
+        .q {
+            font-weight: 600;
+            color: #fb5554;
+        }
+        
+        .box {
+            width: 140px;
+            height: 50px;
+            border: 3px solid #fb5554;
+            border-radius: 25px;
+            background-color: #fb5554;
+            line-height: 50px;
+            font-weight: 900;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="inner">
+
+            <header>
+                <div class="top">
+                    <div class="logo">
+                        <a href="index.html">Me-Talk</a>
+                    </div>
+
+                    <ul class="menu">
+                        <li><a href="newsletter.html" style="font-weight: 900">뉴스레터</a></li>
+                        <li><a href="introduction.html">소개</a></li>
+                    </ul>
+
+                </div>
+            </header>
+            <hr>
+
+
+            
+            <img src="img/metalk.png" alt="metalk">
+            <br>
+            <p>안녕하세요. anna입니다:) <br>
+                다사다난했던 2020년은 잘 마무리 하셨나요?<br>
+                일상에 대해, 내 주변의 사소한 변화들에 대해 다시 한 번 생각을 해보게 된 시간이었어요. 저는 아직 2021년 계획을 세우지 못했는데요😅
+            </p>
+            <p>저처럼 아직 2020년을 보내지 못한 분들이 있다면, 2021년을 아직 맞이하지 못한 분들을 위해 '시작'에 대한 이야기를 가져왔어요.</p>
+            <p>'시작'이라는 단어는 언제나 설레는 것 같아요. 두근두근. 저는 항상 요란법석하게 '시작'을 맞이했던 것 같아요. 저는 최근에 작은 회사에 들어가 콘텐츠 마케팅팀에서 디자인을 하게 됐어요. 공기업에서 현장 업무를 주로 해서 마케팅과 디자안 경험은 전무한데요, 제가 성장하는 모습도 애정을 가지고 지켜봐 주세요😀 </p>
+            <br>
+            <img src="img/letter.png" alt="letter">
+
+            <br><br><br>
+            <hr width=100%><br>
+
+            
+            <h2>미톸레터 제1호 INTERVIEW</h2>
+            
+
+            <p>안녕하세요 홍이에요! <br>
+                제가 굉장히 진지한 성격의 소유자거든요. 그래서 잠깐 독일 유학을 했었다는 이유로 안나에게 "이 독일인아!"하는 핀잔을 듣곤 하죠.😊 그래서 적어도 이 뉴스레터에서 만큼은 진지함을 벗어던지고 임해보고자 합니다. </p>
+            <p>오늘 주제는 '시작'이라는 단어인데요, 글을 쓰려고 하니 자연스럽게 인터뷰이분들의 이야기가 떠오르더라고요. 그 중에서도 '여행하는 디자이너, 윤성님'의 이야기가 제일 먼저 떠올랐어요. 뭔가 <b>세상엔 정말 인연이라는 게 존재한다는 것</b>을 생각해보게 한 인터뷰였거든요. 대표님과의 우연한 만남도 그렇고, 맞춤 정장이라는 분야가 윤성님에게 정말 딱 어울리는 옷이라고 생각하거든요. </p>
+            <br><br><br><br>
+
+            <img src="INTERVIEW/interview01.png" alt="designer so">
+
+            <br><br><br>
+            <p class="q">재단사가 되고 싶은 이유가 있나요?</p>
+            <p>전공이 의류학과였는데요, 수업을 듣는 과제를 하다 보면 옷을 만드는 일련의 과정들을 저눕 거치게 되거든요. 그중에 <u>저는 그림을 그리는 것보다 직접 만드는 과정이 더 재미있었어요.</u> 밤새도록 옷을 만들었다 뜯었다 하다 보면 스트레스가 생기기도 하지만, <u>그 쉼 없는 재봉틀 소리 끝에 나오는 내 눈앞에 결과물이 그 힘듦을 다 잊게 해주는 것 같아요.</u></p>
+            <br><br>
+
+            <p class="q">패션도 분야가 굉장히 많은데 어떻게 이 분야에서 일하게 되셨나요?</p>
+            <p>학교생활에 권태가 와서 배낭여행을 다녀왔어요. 세계 각국을 다니며 많은 것을 보고 경험했지만, 앞으로 내가 어떤 일을 해야 할지는 막막했어요. 귀국하고 얼마 안 돼서 <u>지인이 운영하는 식당에 밥을 먹으러 갔다가 정말 우연히 지금의 대표님을 소개받았어요.</u> 그 인연을 계기로 대표님이 운영하시는 샵에 초대를 받아서 놀러 갔었는데, 대표님과 정말 다양한 주제로 수다를 떨었거든요. <u>면접을 보러 갔던 건 아닌데 '여기에서 같이 일해보지 않을래?' 제안을 해주셔서 이 맞춤 정장이라는 분야에서 일을 시작하게 되었죠.</u></p>
+            <br><br>
+
+            <p class="q">맞춤 정장 관련 일을 하시면서 크게 보람을 느끼는 부분이 있다면?</p>
+            <p>한국에서 정장 문화는 특별한 날 멋지게, 중요한 날 신뢰감을 위해 입는 복식으로 자리 잡혀 있잖아요? 그렇기 때문에 아무래도 조금 더 책임감을 느끼고 있는데, 그 옷이 고객의 기대에 부응하고 만족도가 높았을 때, 그리고 <u>고객님들이 그 옷과 함께 행복한 추억을 남기셨다고 연락이 올 때 보람을 느껴요.</u> 지나가다 매장에 들러 선물을 가져다주시기도 하고요. 그럴 때면 <u>'아, 이분들에게 나를 선택한 건 하나의 큰 선택이었겠구나'</u>하는 생각이 들기도 해요.</p>
+            <br>
+            <br>
+            <center>
+            <div>소윤성님의 이야기가 더 궁금하시다면? <br>
+                <u>아래 버튼을 클릭해주세요:)</u>
+            </div>
+            <br>
+            
+            <p class="box"><a href="INTERVIEW/interview01.html" style="color: #fff">인터뷰 전문 보기</a></p>
+            <p class="box" style="background-color: #fff;"><a href="https://www.youtube.com/watch?v=dPvYY1ftEQU&ab_channel=%EC%99%80%EB%94%94%EC%9E%A1WhythisJoB" style="color: #fb5554;">인터뷰 영상 보기</a></p>
+            </center>
+            <br>
+            
+            <hr width=100%>
+            <br>
+            <h3>아무개의 일기</h3>
+            <h2>시작 말고, 인연</h2>
+
+            <img src="#" alt="insta-toon">
+
+            <h4>'시작 말고 인연'</h4>
+            
+            <p>주제가 '시작'이니만큼 저희의 시작을 이야기해보고 싶었어요! 아마 이런 프로젝트를 같이 하게 된 건 처음 영어학원에서 만난 날이 그 시작이지 않았나 싶네요. '인연'에 대해 생각해보다 보니 세월도 실감하면서(저 때가 2015년 3월...) 저에게도 더 특별한 인연인 것 같네요. 어떻게 이렇게 인연이 시작돼서 몇 년째 지겹게 만나고 있답니다😅</p>
+            <br>
+            <p>여러분들에겐 어떤 시작이 있었나요? <br>
+                그 시작에 어떤 인연이 함께 했나요? <br>
+                여러분들의 이야기를 들려주세요! 답장으로 자유롭게 보내주시면, 매 호마다 여러분들의 이야기도 소개할 거예요, 함께 이 공간을 가꿔나가 봐요😊</p><br>
+
+            <br>
+            <img src="img/closing.jpg" alt="closing">
+            <br>
+            <br>
+            <center>
+               <p class="box"><a href="https://docs.google.com/forms/d/e/1FAIpQLSf20TMi0ZTob5mbMGy9zztUIAEjL5GOUtRJhELhYIQRjl-8tw/viewform" style="color: aliceblue">미톸레터 구독하기</a></p>
+            </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+</body></html>
